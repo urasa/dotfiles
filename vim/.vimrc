@@ -13,7 +13,12 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 " Recommended to install
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
 NeoBundle 'Shougo/vimproc'
-" ...
+NeoBundle 'Shougo/neobundle.vim'
+" color
+NeoBundle 'vim-scripts/Wombat'
+NeoBundle 'altercation/vim-colors-solarized'
+set background=light
+colorscheme solarized
 
 filetype plugin indent on     " Required!
 "
@@ -30,7 +35,6 @@ if neobundle#exists_not_installed_bundles()
 	"finish
 endif
 
-colorscheme solarized
 :source $VIMRUNTIME/macros/cd.vim
 set number
 set tabstop=4
