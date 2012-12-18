@@ -4,3 +4,8 @@
 *.un~
 Session.vim
 .netrwhist
+
+## bundle ##[D[D[D[D[D[D[D[D[Dvim[2~ bundle ##
+vim/bundle/*
+!vim/bundle/neobundle.vim
+
