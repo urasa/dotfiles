@@ -1,0 +1,7 @@
+colorscheme solarized
+:source $VIMRUNTIME/macros/cd.vim
+set number
+set tabstop=4
+set shiftwidth=4
+
+
