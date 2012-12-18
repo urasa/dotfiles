@@ -7,13 +7,11 @@ endif
 
 call neobundle#rc(expand('~/.vim/bundle/'))
 
-" Let NeoBundle manage NeoBundle
-"NeoBundleFetch 'Shougo/neobundle.vim'
-
-" Recommended to install
-" After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
 NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/vimshell'
 " color
 NeoBundle 'vim-scripts/Wombat'
 NeoBundle 'altercation/vim-colors-solarized'
@@ -26,6 +24,7 @@ filetype plugin indent on     " Required!
 " :NeoBundleList          - list configured bundles
 " :NeoBundleInstall(!)    - install(update) bundles
 " :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+
 
 " Installation check.
 if neobundle#exists_not_installed_bundles()
