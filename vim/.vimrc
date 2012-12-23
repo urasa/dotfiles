@@ -25,6 +25,8 @@ filetype plugin indent on     " Required!
 " :NeoBundleInstall(!)    - install(update) bundles
 " :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
 
+" neocomplcache
+let g:neocomplcache_enable_at_startup = 1 " ‹N“®Žž‚É—LŒø‰»
 
 " Installation check.
 if neobundle#exists_not_installed_bundles()
