@@ -1,6 +1,6 @@
 @rem clean
 del %HOME%\_vimrc %HOME%\_gvimrc
-@rem delete %HOME%\vim
+rmdir %HOME%\.vim
 
 @set DF_DIR=%HOME%\dotfiles
 
@@ -8,5 +8,6 @@ del %HOME%\_vimrc %HOME%\_gvimrc
 mklink %HOME%\_vimrc %DF_DIR%\vim\.vimrc
 mklink %HOME%\_gvimrc %DF_DIR%\vim\.gvimrc
 
+mklink /D %HOME%\.vim %DF_DIR%\vim
 pause
 
