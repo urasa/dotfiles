@@ -16,7 +16,7 @@ NeoBundle 'Shougo/vimshell'
 NeoBundle 'vim-scripts/Wombat'
 NeoBundle 'altercation/vim-colors-solarized'
 set background=light
-colorscheme solarized
+" colorscheme solarized
 
 filetype plugin indent on     " Required!
 "
@@ -36,7 +36,7 @@ if neobundle#exists_not_installed_bundles()
 	"finish
 endif
 
-:source $VIMRUNTIME/macros/cd.vim
+" :source ~/.vim/code/cd.vim
 set number
 set tabstop=4
 set shiftwidth=4
