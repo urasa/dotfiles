@@ -6,3 +6,5 @@
 	excludesfile = /home/yuki/.global_ignore
 [color]
 	ui = true
+[push]
+	default = simple
