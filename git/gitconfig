@@ -1,0 +1,8 @@
+[user]
+	name = urasa
+	email = ursk4git@live.jp
+[core]
+	editor = vim -c \"set fenc=utf-8\"
+	excludesfile = /home/yuki/.global_ignore
+[color]
+	ui = true
