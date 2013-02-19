@@ -3,7 +3,7 @@
 	email = ursk4git@live.jp
 [core]
 	editor = vim -c \"set fenc=utf-8\"
-	excludesfile = /home/yuki/.global_ignore
+	excludesfile = ~/.global_ignore
 [color]
 	ui = true
 [push]
