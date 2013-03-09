@@ -45,3 +45,10 @@ set expandtab
 set autoindent
 set smartindent
 set backupdir=~/.vim/tmp
+
+" gtags
+nmap <C-n> :cn<CR>
+nmap <C-p> :cp<CR>
+nmap <C-g> :Gtags 
+nmap <C-h> :Gtags -f %<CR>
+nmap <C-k> :GtagsCursor<CR>
