@@ -46,6 +46,12 @@ set autoindent
 set smartindent
 set backupdir=~/.vim/tmp
 
+" to move cursor between the splited screen
+nmap <Left> h
+nmap <Right> l
+nmap <Up> k
+nmap <Down> j
+
 " gtags
 nmap <C-n> :cn<CR>
 nmap <C-p> :cp<CR>
