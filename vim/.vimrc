@@ -38,12 +38,22 @@ endif
 
 " :source ~/.vim/code/cd.vim
 set number
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+
+" tab & indent
+" expandtab: instert spaces for tab
+" tabstop(ts): width of tab
+" softtabstop(sts): inserted number of spaces for tab
+" shiftwidth(sw): inserted number of spaces as autoindent 
+" autoindent: considering only before line
+" smartindent: considering some C syntax
 set expandtab
-set autoindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+" set autoindent
 set smartindent
+
+" don't leave the buckup files
 set backupdir=~/.vim/tmp
 
 " to move cursor between the splited screen
