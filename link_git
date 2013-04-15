@@ -1,9 +1,0 @@
-#!/bin/sh
-cd ~
-
-## git
-[ -e .gitconfig     ] && mv .gitconfig .gitconfig.bak
-[ -e .global_ignore ] && mv .global_ignore .global_ignore.bak
-ln -v -s dotfiles/git/gitconfig .gitconfig
-ln -v -s dotfiles/git/global_ignore .global_ignore
-
