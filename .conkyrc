@@ -55,7 +55,7 @@ own_window_hints sticky
 own_window_hints skip_taskbar
 own_window_hints skip_paper
 stippled_borders 0
-update_interval 1
+update_interval 2
 uppercase no
 use_spacer none
 show_graph_scale no
@@ -78,5 +78,20 @@ ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
 ${top name 3} ${top pid 3} ${top cpu 3} ${top mem 3}
 ${top name 4} ${top pid 4} ${top cpu 4} ${top mem 4}
 
-[]
+Network: UP ${upspeed em1} / DOWN ${downspeed em1}
+${upspeedgraph em1 ffffff ff6666}
+${downspeedgraph em1 ffffff 66ff66}
+
+#[T O D O]
+#$hr
+#${exec cat ~/Dropbox/epistle/todo.txt}
+#
+[M E M O]
 $hr
+\# gtags
+nmap <C-n> :cn<CR>
+nmap <C-p> :cp<CR>
+nmap <C-g> :Gtags 
+nmap <C-h> :Gtags -f %<CR>
+nmap <C-k> :GtagsCursor<CR>
+
