@@ -53,7 +53,7 @@ own_window_hints undecorated
 own_window_hints below
 own_window_hints sticky
 own_window_hints skip_taskbar
-own_window_hints skip_paper
+# own_window_hints skip_paper
 stippled_borders 0
 update_interval 2
 uppercase no
