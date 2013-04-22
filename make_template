@@ -17,21 +17,21 @@ init:
 
 # update
 #   make links or copies for each dotfiles
-update: git vim conky xmodmap
+update: _git _vim _conky _xmodmap
 
 # link commands 
-git:
+_git:
 	ln -vs $(DF_DIR)/git/gitconfig $(HOME)/.gitconfig
 	ln -vs $(DF_DIR)/git/global_ignore $(HOME)/.global_ignore
 
-vim:
+_vim:
 	ln -vs $(DF_DIR)/vim/.vimrc $(HOME)/.vimrc
 	ln -vs $(DF_DIR)/vim/.gvimrc $(HOME)/.gvimrc
 	ln -vs $(DF_DIR)/vim $(HOME)/.vim
 
-conky:
+_conky:
 	ln -vs $(DF_DIR)/.conkyrc $(HOME)/.conkyrc
 
-xmodmap:
+_xmodmap:
 	ln -vs $(DF_DIR)/.Xmodmap $(HOME)/.Xmodmap
 
