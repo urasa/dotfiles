@@ -13,10 +13,11 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimshell'
 " color
+NeoBundle 'thinca/vim-guicolorscheme'
 NeoBundle 'vim-scripts/Wombat'
 NeoBundle 'altercation/vim-colors-solarized'
-set background=light
-" colorscheme solarized
+autocmd VimEnter * :GuiColorScheme wombat
+autocmd VimEnter * :set background=dark
 
 filetype plugin indent on     " Required!
 "
