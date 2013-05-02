@@ -30,6 +30,14 @@ filetype plugin indent on     " Required!
 " neocomplcache
 let g:neocomplcache_enable_at_startup = 1 " ‹N“®Žž‚É—LŒø‰»
 
+" quickrun
+let g:quickrun_config = {
+\   "_" : {
+\       "outputter/buffer/split" : ":botright",
+\       "outputter/buffer/close_on_empty" : 1
+\   },
+\}
+
 " Installation check.
 if neobundle#exists_not_installed_bundles()
 	echomsg 'Not installed bundles : ' .
