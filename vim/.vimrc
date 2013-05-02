@@ -12,6 +12,7 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimshell'
+NeoBundle 'thinca/vim-quickrun'
 " color
 NeoBundle 'thinca/vim-guicolorscheme'
 NeoBundle 'vim-scripts/Wombat'
