@@ -33,8 +33,9 @@ let g:neocomplcache_enable_at_startup = 1 " ‹N“®Žž‚É—LŒø‰»
 " quickrun
 let g:quickrun_config = {
 \   "_" : {
-\       "outputter/buffer/split" : ":botright",
-\       "outputter/buffer/close_on_empty" : 1
+\       "outputter/buffer/split" : ":botright 10sp",
+\       "outputter/buffer/close_on_empty" : 1,
+\       "hook/time/enable" : 1
 \   },
 \}
 
