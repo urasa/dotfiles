@@ -19,9 +19,14 @@ NeoBundle 'thinca/vim-guicolorscheme'
 NeoBundle 'vim-scripts/Wombat'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'tomasr/molokai'
-NeoBundle 'nanotech/jellybeans.vim'
-autocmd VimEnter * :GuiColorScheme wombat
-autocmd VimEnter * :set background=dark
+" NeoBundle 'nanotech/jellybeans.vim' " repo is offline...?
+set background=dark
+if !has('gui_running')
+    GuiColorScheme molokai
+end
+autocmd GUIEnter * colorscheme molokai
+" autocmd VimEnter * GuiColorScheme wombat
+" autocmd VimEnter * set background=dark
 
 filetype plugin indent on     " Required!
 "
