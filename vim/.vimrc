@@ -14,9 +14,12 @@ NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'thinca/vim-quickrun'
 " color
+NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'thinca/vim-guicolorscheme'
 NeoBundle 'vim-scripts/Wombat'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'tomasr/molokai'
+NeoBundle 'nanotech/jellybeans.vim'
 autocmd VimEnter * :GuiColorScheme wombat
 autocmd VimEnter * :set background=dark
 
