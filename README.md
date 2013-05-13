@@ -5,8 +5,7 @@ my dotfiles!
 
 usage
 -----
-1. `make -f make_template init` to create makefiles and init submodules.
+1. `make init` to init and update submodules.
 2. compile submodules.
-3. edit makefile.
-4. `make update` to create dotfiles into $HOME.
+3. `make update` to create dotfiles into $HOME.
 
