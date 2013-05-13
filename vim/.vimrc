@@ -7,10 +7,11 @@ endif
 
 call neobundle#rc(expand('~/.vim/bundle/'))
 
-NeoBundle 'Shougo/vimproc'
+NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
+NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'thinca/vim-quickrun'
 " color
@@ -28,6 +29,9 @@ end
 autocmd GUIEnter * colorscheme molokai
 " autocmd VimEnter * GuiColorScheme wombat
 " autocmd VimEnter * set background=dark
+
+" powerline
+set laststatus=2
 
 filetype plugin indent on     " Required!
 "

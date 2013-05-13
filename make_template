@@ -17,7 +17,7 @@ init:
 
 # update
 #   make links or copies for each dotfiles
-update: _git _vim _conky _xmodmap
+update: _git _vim _conky _xmodmap _tmux
 
 # link commands 
 _git:
@@ -34,4 +34,5 @@ _conky:
 
 _xmodmap:
 	ln -vs $(DF_DIR)/.Xmodmap $(HOME)/.Xmodmap
-
+_tmux:
+    ln -vs $(DF_DIR)/.tmux.conf $(HOME)/.tmux.conf
