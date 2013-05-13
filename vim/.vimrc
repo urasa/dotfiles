@@ -4,10 +4,20 @@ set nocompatible               " Be iMproved
 if has('vim_starting')
 	set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
-
 call neobundle#rc(expand('~/.vim/bundle/'))
 
-NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
+filetype plugin indent on
+
+" NeoBundle Installation check.
+if neobundle#exists_not_installed_bundles()
+	echomsg 'Not installed bundles : ' .
+		\ string(neobundle#get_not_installed_bundle_names())
+	echomsg 'Please execute ":NeoBundleInstall" command.'
+	"finish
+endif
+
+" plugins
+NeoBundle 'Lokaltog/powerline', {'rtp' : 'powerline/bindings/vim'}
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/unite.vim'
@@ -15,33 +25,25 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'thinca/vim-quickrun'
 " color
-NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'thinca/vim-guicolorscheme'
-NeoBundle 'vim-scripts/Wombat'
+NeoBundle 'ujihisa/unite-colorscheme'
+" colorschemes
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'tomasr/molokai'
-NeoBundle 'nanotech/jellybeans.vim' " repo is offline...?
+NeoBundle 'vim-scripts/Wombat'
 set background=dark
-if !has('gui_running')
-    " autocmd VimEnter * GuiColorScheme molokai
-    colorscheme molokai
-end
-autocmd GUIEnter * colorscheme molokai
-" autocmd VimEnter * GuiColorScheme wombat
-" autocmd VimEnter * set background=dark
+colorscheme molokai
+" if !has('gui_running')
+"     autocmd VimEnter * GuiColorScheme molokai
+" end
+" autocmd GUIEnter * colorscheme molokai
 
 " powerline
 set laststatus=2
 
-filetype plugin indent on     " Required!
-"
-" Brief help
-" :NeoBundleList          - list configured bundles
-" :NeoBundleInstall(!)    - install(update) bundles
-" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-
 " neocomplcache
-let g:neocomplcache_enable_at_startup = 1 " ‹N“®Žž‚É—LŒø‰»
+let g:neocomplcache_enable_at_startup = 1
 
 " quickrun
 let g:quickrun_config = {
@@ -54,15 +56,7 @@ let g:quickrun_config = {
 \   },
 \}
 
-" Installation check.
-if neobundle#exists_not_installed_bundles()
-	echomsg 'Not installed bundles : ' .
-		\ string(neobundle#get_not_installed_bundle_names())
-	echomsg 'Please execute ":NeoBundleInstall" command.'
-	"finish
-endif
-
-" :source ~/.vim/code/cd.vim
+" show number
 set number
 
 " tab & indent
@@ -76,7 +70,6 @@ set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-" set autoindent
 set smartindent
 
 " don't leave the buckup files
