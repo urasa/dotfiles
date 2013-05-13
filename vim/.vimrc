@@ -19,7 +19,7 @@ NeoBundle 'thinca/vim-guicolorscheme'
 NeoBundle 'vim-scripts/Wombat'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'tomasr/molokai'
-" NeoBundle 'nanotech/jellybeans.vim' " repo is offline...?
+NeoBundle 'nanotech/jellybeans.vim' " repo is offline...?
 set background=dark
 if !has('gui_running')
     GuiColorScheme molokai
