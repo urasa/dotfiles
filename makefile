@@ -29,5 +29,6 @@ _conky:
 
 _xmodmap:
 	ln -vs $(DF_DIR)/.Xmodmap $(HOME)/.Xmodmap
+
 _tmux:
-    ln -vs $(DF_DIR)/.tmux.conf $(HOME)/.tmux.conf
+	ln -vs $(DF_DIR)/.tmux.conf $(HOME)/.tmux.conf
