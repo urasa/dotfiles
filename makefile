@@ -1,10 +1,9 @@
 
-VERSION = 1.0
 DF_DIR = $(HOME)/dotfiles
 
-# version
-version:
-	@echo $(VERSION)
+# update
+#   make links or copies for each dotfiles
+update: _git _vim _conky _xmodmap _tmux
 
 # initialize
 #   setup the submodules and update-script
@@ -12,14 +11,10 @@ version:
 init: 
 	git submodule init
 	git submodule update
-	@echo 'please compile the submodules!'
-	cp $(DF_DIR)/make_template $(DF_DIR)/makefile
+	@echo 'please build the submodules!'
 
-# update
-#   make links or copies for each dotfiles
-update: _git _vim _conky _xmodmap _tmux
 
-# link commands 
+# update setting files
 _git:
 	ln -vs $(DF_DIR)/git/gitconfig $(HOME)/.gitconfig
 	ln -vs $(DF_DIR)/git/global_ignore $(HOME)/.global_ignore
