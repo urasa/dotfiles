@@ -1,5 +1,7 @@
 
 DF_DIR = $(HOME)/dotfiles
+TARGET = .gitconfig .global_ignore .vimrc .gvimrc .conkyrc .Xmodmap .tmux.conf
+TARGET_DIR = .vim
 
 # update
 #   make links or copies for each dotfiles
@@ -13,6 +15,10 @@ init:
 	git submodule update
 	@echo 'please build the submodules!'
 
+clean:
+	cd $(HOME)
+	rm -f $(TARGET)
+	rmdir $(TARGET_DIR)
 
 # update setting files
 _git:
