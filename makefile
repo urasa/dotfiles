@@ -3,9 +3,9 @@ DF_DIR = $(HOME)/dotfiles
 TARGET = .gitconfig .global_ignore .vimrc .gvimrc .conkyrc .Xmodmap .tmux.conf
 TARGET_DIR = .vim
 
-# update
+# link
 #   make links or copies for each dotfiles
-update: _git _vim _conky _xmodmap _tmux
+link: _git _vim _conky _xmodmap _tmux
 
 # initialize
 #   setup the submodules and update-script
