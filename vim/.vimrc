@@ -32,6 +32,8 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'vim-scripts/Wombat'
+set t_Co=256
+set syntax
 set background=dark
 colorscheme molokai
 " if !has('gui_running')
