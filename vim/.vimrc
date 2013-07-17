@@ -24,6 +24,8 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'thinca/vim-quickrun'
+" syntax
+NeoBundle 'beyondmarc/glsl.vim'
 " color
 NeoBundle 'thinca/vim-guicolorscheme'
 NeoBundle 'ujihisa/unite-colorscheme'
