@@ -77,7 +77,7 @@ set smartindent
 " don't leave the buckup files
 set backupdir=~/.vim/tmp
 
-" to move cursor between the splited screen
+" to move cursor between the split screen
 nmap <Left> h
 nmap <Right> l
 nmap <Up> k
