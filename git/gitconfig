@@ -13,3 +13,7 @@
 	ff = false
 [pull]
 	rebase = true
+[alias]
+	co = checkout
+	st = status
+	log1 = log
