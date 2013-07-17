@@ -61,6 +61,9 @@ let g:quickrun_config = {
 " show number
 set number
 
+" always display tabs
+set showtabline=2
+
 " tab & indent
 " expandtab: instert spaces for tab
 " tabstop(ts): width of tab
