@@ -16,5 +16,5 @@
 [alias]
 	ch = checkout
 	co = commit
-	log1 = log
+	log1 = log --oneline
 	st = status
