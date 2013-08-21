@@ -2,8 +2,8 @@
 
 set DF_DIR=%HOME%\dotfiles
 set LINK_FILES=.gitconfig .global_ignore .vimrc .gvimrc .conkyrc .Xmodmap .tmux.conf
-set LINK_DIRS=.vim
-set LINK_TARGET=git vim
+set LINK_DIRS=.vim .emacs.d
+set LINK_TARGET=git vim emacs
 
 rem mode selection
 if "%1" == "" call :usage
@@ -29,6 +29,7 @@ for %%i in (%LINK_TARGET%) do (
     echo link %%i
     if "%%i" == "git" call :git
     if "%%i" == "vim" call :vim
+    if "%%i" == "emacs" call :emacs
     if "%%i" == "conky" call :conky
     if "%%i" == "xmodmap" call :xmodmap
     if "%%i" == "tmux" call :tmux
@@ -38,7 +39,10 @@ exit /b
 :clean
 pushd %HOME%
 del /P %LINK_FILES%
-rmdir %LINK_DIRS%
+for %%i in (%LINK_DIRS%) do (
+    echo rmdir %%i
+    rmdir %%i
+)
 popd
 exit /b
 
@@ -52,6 +56,10 @@ exit /b
 mklink %HOME%\.vimrc %DF_DIR%\vim\.vimrc
 mklink %HOME%\.gvimrc %DF_DIR%\vim\.gvimrc
 mklink /D %HOME%\.vim %DF_DIR%\vim
+exit /b
+
+:emacs
+mklink /D %HOME%\.emacs.d %DF_DIR%\.emacs.d
 exit /b
 
 :conky

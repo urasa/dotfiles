@@ -1,11 +1,11 @@
 
 DF_DIR = $(HOME)/dotfiles
 TARGET = .gitconfig .global_ignore .vimrc .gvimrc .conkyrc .Xmodmap .tmux.conf
-TARGET_DIR = .vim
+TARGET_DIR = .vim .emacs.d
 
 # link
 #   make links or copies for each dotfiles
-link: _git _vim _conky _xmodmap _tmux
+link: _git _vim _emacs _conky _xmodmap _tmux
 
 # initialize
 #   setup the submodules and update-script
@@ -29,6 +29,9 @@ _vim:
 	ln -vs $(DF_DIR)/vim/.vimrc $(HOME)/.vimrc
 	ln -vs $(DF_DIR)/vim/.gvimrc $(HOME)/.gvimrc
 	ln -vs $(DF_DIR)/vim $(HOME)/.vim
+
+_emacs:
+	ln -vs $(DF_DIR)/.emacs.d $(HOME)/.emacs.d
 
 _conky:
 	ln -vs $(DF_DIR)/.conkyrc $(HOME)/.conkyrc
