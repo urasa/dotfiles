@@ -59,7 +59,7 @@ mklink /D %HOME%\.vim %DF_DIR%\vim
 exit /b
 
 :emacs
-mklink /D %HOME%\.emacs.d %DF_DIR%\.emacs.d
+mklink /D %HOME%\.emacs.d %DF_DIR%\emacs.d
 exit /b
 
 :conky

@@ -31,7 +31,7 @@ _vim:
 	ln -vs $(DF_DIR)/vim $(HOME)/.vim
 
 _emacs:
-	ln -vs $(DF_DIR)/.emacs.d $(HOME)/.emacs.d
+	ln -vs $(DF_DIR)/emacs.d $(HOME)/.emacs.d
 
 _conky:
 	ln -vs $(DF_DIR)/.conkyrc $(HOME)/.conkyrc
