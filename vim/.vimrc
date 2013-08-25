@@ -1,6 +1,11 @@
 " neobundle.vim
 set nocompatible               " Be iMproved
 
+set encoding=utf-8
+set fileencodings=utf-8,iso-2022-jp-3,cp932,euc-jisx0213,euc-jp
+set fileformat=unix
+set fileformats=unix,dos
+
 if has('vim_starting')
 	set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
