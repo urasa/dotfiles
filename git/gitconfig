@@ -19,3 +19,4 @@
 	log1 = log --oneline
 	st = status
     br = branch
+    wd = diff --word-diff
