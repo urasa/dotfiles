@@ -18,3 +18,4 @@
 	co = commit
 	log1 = log --oneline
 	st = status
+    br = branch
