@@ -16,7 +16,7 @@
 [alias]
 	ch = checkout
 	co = commit
-	log1 = log --oneline
+	lg = log --oneline --graph
 	st = status --short --branch
 	br = branch
 	wd = diff --word-diff
