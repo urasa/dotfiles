@@ -20,3 +20,5 @@
 	st = status --short --branch
 	br = branch
 	wd = diff --word-diff
+[diff]
+	algorithm = histogram
