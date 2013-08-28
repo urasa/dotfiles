@@ -17,6 +17,6 @@
 	ch = checkout
 	co = commit
 	log1 = log --oneline
-	st = status
+	st = status --short --branch
 	br = branch
 	wd = diff --word-diff
