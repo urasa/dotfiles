@@ -16,7 +16,9 @@
 [alias]
 	ch = checkout
 	co = commit
-	log1 = log --oneline
-	st = status
+	lg = log --oneline --graph
+	st = status --short --branch
 	br = branch
 	wd = diff --word-diff
+[diff]
+	algorithm = histogram
